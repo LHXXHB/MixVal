@@ -19,7 +19,6 @@ import pre_process as prep
 from data_list import ImageList
 from classifier import ImageClassifier, ImageClassifierMDD, ImageClassifierAFN
 from backbone import get_model
-import pdb
 
 def entropy(input_):
     epsilon = 1e-5
@@ -191,7 +190,6 @@ def mixval(net, args, config):
     target_acc = torch.sum(raw_logits.max(dim=-1)[1].float() == raw_labels.float()).item() / float(raw_labels.size()[0])    
 
     # our ICE with only inter-cluster mixup: max is best
-    #pdb.set_trace()
     ice_inter = torch.sum(all_mix_logits[all_diff_idx].max(dim=-1)[1].float() == all_mix_labels[all_diff_idx].max(dim=-1)[1].float()).item() / \
             float(all_mix_labels[all_diff_idx].size()[0])
 

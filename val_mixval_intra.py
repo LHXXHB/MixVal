@@ -19,7 +19,6 @@ import pre_process as prep
 from data_list import ImageList, ImageList_w_path
 from classifier import ImageClassifier, ImageClassifierMDD, ImageClassifierAFN
 from backbone import get_model
-import pdb
 
 def log_dset(out_path, data_list):
     if not osp.exists(out_path):
@@ -212,7 +211,6 @@ def mixval(net, args, config):
     target_acc = torch.sum(raw_logits.max(dim=-1)[1].float() == raw_labels.float()).item() / float(raw_labels.size()[0])    
 
     # our ICE with only intra-cluster mixup: max is best
-    #pdb.set_trace()
     ice_intra = torch.sum(all_mix_logits[all_same_idx].max(dim=-1)[1].float() == all_mix_labels[all_same_idx].max(dim=-1)[1].float()).item() / \
             float(all_mix_labels[all_same_idx].size()[0])
 
