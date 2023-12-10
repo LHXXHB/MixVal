@@ -1,0 +1,5 @@
+A2C, After Interval 1, test_acc: 44.67354, test_loss: 2.62696, max_pro: 0.25460
+A2C, After Interval 2, test_acc: 45.15464, test_loss: 2.60507, max_pro: 0.26155
+A2C, After Interval 3, test_acc: 45.86483, test_loss: 2.55542, max_pro: 0.28212
+A2C, After Interval 4, test_acc: 46.25429, test_loss: 2.55515, max_pro: 0.28255
+A2C, After Interval 5, test_acc: 46.46048, test_loss: 2.54003, max_pro: 0.28439
