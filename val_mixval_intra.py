@@ -96,7 +96,6 @@ def test(config, args, net):
             paths += full_paths
             inputs = inputs.cuda()
             outputs = net(inputs)
-            featf = None
             if start_test:
                 all_output = outputs.float().cpu()
                 all_label = labels.float()
