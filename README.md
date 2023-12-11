@@ -2,14 +2,14 @@
 
 ## [**Mixed Samples as Probes for Unsupervised Model Selection in Domain Adaptation**](https://openreview.net/forum?id=ackajXqei2)
 
-### Prerequisites:
+### Prerequisites
 - python == 3.7.13 
 - cudatoolkit == 10.1.243
 - pytorch ==1.7.1
 - torchvision == 0.8.2
 - numpy, scikit-learn, PIL, argparse
 
-### Demo:
+### Demo
 
 - Configure the PyTorch environment.
 - Download the [Office-Home](https://www.hemanthdv.org/officeHomeDataset.html) dataset. Configure the data lists in **data** and the checkpoints in **ckpts**.
@@ -17,8 +17,6 @@
 
 
 ### Citation
-
-If you find this code useful for your research, please cite our paper
 
 > @inproceedings{hu2023mixed,  
 > &nbsp; &nbsp;  title={Mixed Samples as Probes for Unsupervised Model Selection in Domain Adaptation},  
