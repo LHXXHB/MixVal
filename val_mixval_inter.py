@@ -85,7 +85,6 @@ def test(config, args, net):
             labels = data[1]
             inputs = inputs.cuda()
             outputs = net(inputs)
-            featf = None
             if start_test:
                 all_output = outputs.float().cpu()
                 all_label = labels.float()
